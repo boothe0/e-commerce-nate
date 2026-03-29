@@ -1,0 +1,51 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'home/styles.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="spiral"></div>
+    <div style="display: flex">
+      <div class="tab-roll">
+        <div class="tab1">
+          <p class="vendor-name"><a href="/vendor">Vendor Name</a></p>
+        </div>
+        <div class="tab2">
+          <p class="vendor-name"><a href="/vendor">Vendor Name</a></p>
+        </div>
+        <div class="tab3">
+          <p class="vendor-name"><a href="/vendor">Vendor Name</a></p>
+        </div>
+        <div class="tab4">
+          <p class="vendor-name"><a href="/vendor">Vendor Name</a></p>
+        </div>
+      </div>
+      <div class="sales" style="width: 100%">
+        <p class="sales-text">Sales</p>
+      </div>
+    </div>
+
+    <div class="logo">
+      <img
+        style="max-width: 100%; max-height: 100%; border: 5px solid #000"
+        src="../../media/logo.jpg"
+        alt="Description"
+      />
+    </div>
+
+    <script src="{% static 'home/spiral.js' %}"></script>
+    <script src="" async defer></script>
+  </body>
+</html>

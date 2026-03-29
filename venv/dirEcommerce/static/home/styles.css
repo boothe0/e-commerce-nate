@@ -1,0 +1,120 @@
+body {
+  background: url(../../media/background-paper.png);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  margin-right: 80px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.spiral {
+  display: flex;
+}
+
+.sales {
+  color: #000;
+  margin: 0px;
+  /* BigFontStyle */
+  font-family: "Butterfly Kids", cursive;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  vertical-align: top;
+  border: 5px solid #000;
+}
+.sales-text {
+  margin: 0px;
+  margin-bottom: 100px;
+}
+
+.tab1,
+.tab2,
+.tab3,
+.tab4 {
+  width: 16px;
+  height: 41px;
+  position: relative;
+  margin-left: 40px;
+  margin-bottom: 16px;
+  transition: width 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab1 {
+  background-color: #6c8ec9;
+}
+.tab2 {
+  background-color: #8faae0;
+}
+.tab3 {
+  background-color: #c0c9ef;
+}
+.tab4 {
+  background-color: #d8bbd6;
+}
+
+.tab1:hover {
+  width: 169px;
+}
+.tab2:hover {
+  width: 149px;
+}
+.tab3:hover {
+  width: 129px;
+}
+.tab4:hover {
+  width: 109px;
+}
+
+.vendor-name {
+  display: none;
+}
+
+.logo {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding-top: 100px;
+}
+
+@media (min-width: 1024px) {
+  .sales {
+    margin-left: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-top: 100px;
+  }
+  .sales {
+    margin-left: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sales {
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .sales {
+    margin-left: 50px;
+  }
+}
