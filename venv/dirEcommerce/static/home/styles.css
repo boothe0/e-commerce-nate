@@ -76,6 +76,9 @@ body {
 
 .vendor-name {
   display: none;
+  font-family: "Butterfly Kids", cursive;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .logo {
@@ -85,6 +88,52 @@ body {
   width: 100%;
   justify-content: end;
   padding-top: 100px;
+}
+
+.sales-item {
+  width: 400px;
+  height: 400px;
+}
+
+.sales {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.sales-gliding {
+  display: flex;
+  gap: 1rem;
+  animation: scroll 20s linear infinite;
+}
+
+.sales-item {
+  flex: 0 0 auto;
+  max-width: 25px;
+  height: auto;
+  overflow: visible;
+  font-family: "Roboto Condensed";
+  font-size: 40px;
+}
+
+.sales:hover .sales-gliding {
+  animation-play-state: paused;
+}
+.contacts {
+  font-family: "Butterfly Kids", cursive;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0px;
+  margin-left: 50px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
 }
 
 @media (min-width: 1024px) {
